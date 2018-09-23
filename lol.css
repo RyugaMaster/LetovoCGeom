@@ -1,0 +1,47 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+font-family: Arial, Verdana, sans-serif; /* Семейство шрифтов */
+background-color: #f0f0f0; /* Цвет фона веб-страницы */
+color: #333; /* Цвет основного текста */
+font-size: 16pt;
+}
+h1 {
+color: #a52a2a; /* Цвет заголовка */
+font-size: 24pt; /* Размер шрифта в пунктах */
+font-family: Georgia, Times, serif; /* Семейство шрифтов */
+font-weight: normal; /* Нормальное начертание текста */
+margin-left: 600px;
+}
+
+h2 {
+color: darkslategray;
+font-size: 20pt;
+font-family: Georgia, Times, serif; /* Семейство шрифтов */
+font-weight: normal; /* Нормальное начертание текста */
+text-indent: 100px;
+margin-right: 500px;
+margin-left: 100px;
+}
+p {
+text-align: justify; /* Выравнивание по ширине */
+margin-left: 60px; /* Отступ слева в пикселах */
+margin-right: 10px; /* Отступ справа в пикселах */
+}
+#picture {
+text-indent: 1000px;
+}
+
+a {
+color: #696969
+}
+
+hr {
+border: none; /* Убираем границу */
+background-color: gray; /* Цвет линии */
+color: red; /* Цвет линии для IE6-7 */
+height: 2px; /* Толщина линии */
+}
