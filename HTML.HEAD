@@ -8,7 +8,7 @@
 	<body>
         <article id = "art1"  Оформеление всей страницы (почти). "id = "art1"" прописать ОБЯЗАТЕЛЬНО> 
 		<!--Картинка логотипа Летово в углу страницы. При нажатии перейдет на сайт школы.-->
-    <a href = "https://www.letovo.ru"><img id = "img3" src="https://letovo.ru/upload/img/logo.png"> </a>
+    <a href = "https://www.letovo.ru" id = "img3"> <img src="https://letovo.ru/upload/img/logo.png"> </a>
       <!--Пробелы-->  <br><br> <br> <br> <br> <br>
        <!--Линия--> <hr>
         <a  href="Ссылка на ГЛАВНУЮ СТРАНИЦУ. Ее пока нет, так что не заморачивайтесь)" 
