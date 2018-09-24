@@ -36,7 +36,7 @@
 /* Общее оформление ссылок*/
 
                 a{
-                    color: grey;
+                    color: yellowgreen;
                     display: inline-block;
                     font-family: 'Dancing Script', cursive;
                     text-decoration: none;
