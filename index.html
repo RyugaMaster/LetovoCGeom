@@ -1,1 +1,217 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Пример</title>
+        <style>
+           @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            @keyframes anim {
+                0% {
+                    transform: translateX(0px) rotateY(0deg);
+                }
+                30% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(0deg);
+                }
+                50% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(180deg);
+                }
+                80% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+                100% {
+                    transform: translateX(0px) rotateY(0deg);
+                }
+            }
+            #art1 {
+                border-width: 6px;
+                border-color: green;
+                border-style: inset;
+                width: 90vw;
+                background-color: hsla(111, 87%, 90%, 0.5);
+                margin: auto;
+                position: relative;
+                margin-bottom: 5vh;
+                margin-top: 5vh;
+            }
+            .h {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 5vw;
+                color: cadetblue;
+            }
+            .brief{
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                display: block;
+                width: 50vw;
+                margin-top: 50px;
+                margin-left : 25vw;
+                font-size: 2vw;
+                color: orange;
+                transition: 1s;
+            }
+            .brief:hover{
+                color: green;
+                transform: scale(1.5) rotate(180deg);
+            }
+            h2 {
+                font-size: 4vw;
+                color: red;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                margin-bottom: 50px;
+            }
+            h2::first-letter{
+                font-size: 8vw;
+                color: blueviolet
+            }
+            #img {
+                position: absolute;
+                width: 50vw;
+                height: 30vw;
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                top: calc(38vw + 70px);
+                transition: 3s;
+                left: 5vw;
+            }
+            #img:hover {
+                transform: rotate(720deg);
+            }
+            .imgdescription{
+                position: absolute;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2vw;
+                width: 27vw;
+                right: 5vw;
+                transition: 1s;
+                color: cadetblue;
+                top: calc(38vw + 15vw);
+            }
+            .imgdescription:hover {
+               color: red;
+            }
+            .imgdescription::first-letter {
+                font-weight: bolder;
+                font-size: 3vw;
+                color: forestgreen;
+            }
+            p{
+                width: 80vw;
+                margin-left: 5vw;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2.3vw;
+                color: yellowgreen;
+                animation: shadow  2s infinite ease-in-out;
+            }
+            #fp {
+                margin-top: calc(35vw + 60px);
+            }
+            #vid {
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                background-position: center;
+                height: 38.6vw;
+                margin-top: 20px;
+                margin-left: 10vw;
+                margin-bottom: 50px;
+            }
+            .problem {
+                display: inline-block;
+                border-width: 6px;
+                border-radius: 50%;
+                border-color: green;
+                border-style: outset;
+                text-align: center;
+                width: 25vw;
+                height: 5.5vw;
+                margin-top: 50px;
+                margin-left: calc(3.75vw - 9px);
+                font-family: 'Dancing Script', cursive;
+                font-weight: bold;
+                color: hsl(222, 80%, 59%);
+                font-size: 3vw;
+                text-decoration: none;
+                transition: 1s;
+            }
+            .problem:hover{
+                transform: scale(1.2);
+                border-style: inset;
+            }
+            .hard {
+                background-color: hsla(1, 100%, 50%, 0.5);
+            }
+            .bt {
+                margin-bottom: 50px;
+            }
+            .hard:hover {
+                background-color: hsla(1, 100%, 50%, 1);
+            }
+            .normal {
+                background-color: hsla(58, 100%, 50%, 0.5);
+            }
+            .normal:hover {
+                background-color: hsla(58, 100%, 50%, 1);
+            }
+            .easy {
+                background-color: hsla(125, 100%, 50%, 0.5);
+            }
+            .easy:hover {
+                background-color: hsla(125, 100%, 50%, 1);
+            }
+            #train {
+                width: 200px;
+                animation: anim 10s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <article id="art1">
+            <header>
+                <h1 class = "h">Алгоритм Карпа-@@?^?@*</h1>
+                <p class = "brief">Очень, очень сложно. Очень очень сложно пресложно. Просто не читайте и живите дальше. И прочее краткое описание.</p>
+            </header>
+            <main>
+                <h2>Теория</h2>
+                <img id="img" alt="Тут должна быть картинка" src="img.jpg">
+                <p class="imgdescription"> Это кот</p>
+                <p class="p2" id="fp">Таким образом начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Разнообразный и богатый опыт укрепление и развитие структуры играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности позволяет оценить значение систем массового участия.</p>
+                <p >Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации новых предложений. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки дальнейших направлений развития. Задача организации, в особенности же консультация с широким активом представляет собой интересный эксперимент проверки новых предложений.</p>
+                <p >Не следует, однако забывать, что рамки и место обучения кадров способствует подготовки и реализации соответствующий условий активизации. Равным образом начало повседневной работы по формированию позиции играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Товарищи! начало повседневной работы по формированию позиции играет важную роль в формировании систем массового участия. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Таким образом новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки соответствующий условий активизации.</p>
+                <p>С другой стороны сложившаяся структура организации позволяет оценить значение систем массового участия. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют определения и уточнения модели развития. Повседневная практика показывает, что новая модель организационной деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+                <p >Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности способствует подготовки и реализации дальнейших направлений развития. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации модели развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание модели развития. Задача организации, в особенности же укрепление и развитие структуры позволяет выполнять важные задания по разработке систем массового участия. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития.</p>
+                <video id="vid" controls="controls" poster="img.jpg">
+                    <source src="vid.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                    <source src="vid.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                    <source src="vid.webm" type='video/webm; codecs="vp8, vorbis"'>
+                    Тут должно быть видео.
+                </video>
+                <h2>Задачи</h2>
+                <a class="problem easy" href="https://yandex.ru">b</a>
+                <a class="problem normal" href="https://yandex.ru">a</a>
+                <a class="problem easy" href="https://yandex.ru">kek</a>
+                <a class="problem hard" href="https://yandex.ru">gh</a>
+                <a class="problem normal" href="https://yandex.ru">a</a>
+                <a class="problem normal" href="https://yandex.ru">н</a>
+                <a class="problem easy bt" href="https://yandex.ru">lol</a>
+                <a class="problem hard bt" href="https://yandex.ru">ззз</a>
+                <a class="problem hard bt" href="https://yandex.ru">cheburek</a>
+            </main>
+            <footer>
+                <p>Эту страницу делал не Андрей. Все вопросы, коментарии и советы - к Олегу.</p>
+                <p>Паровозик уиииииии :)</p>
+                <img id = "train"  src = "http://raskraski-dlya-malchikov.ru/wp-content/uploads/Raskraska-parovozik-2.jpg" alt = "Паровозик">
+            </footer>
+        </article>
+    </body>
+</html>
