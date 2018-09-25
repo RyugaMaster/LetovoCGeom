@@ -17,6 +17,7 @@
                     transform: translateX(0px) rotateY(180deg);
                 }
             }
+<<<<<<< HEAD
 <<<<<<< HEAD:css№1.css
             /* офориление вашей статьи */
             #art1 {
@@ -172,6 +173,8 @@
                 margin-bottom: 50px;
             }
 =======
+=======
+>>>>>>> parent of 756cbbc... WOW
 /*art1 - внешнее оформление нашей страницы. Просто скопируйте.*/
                 #art1 {
                     border-width: 6px;
@@ -379,4 +382,7 @@
                     border: 4px double black;
                     padding: 10px;
                 }
+<<<<<<< HEAD
 >>>>>>> parent of 756cbbc... WOW:FF.css
+=======
+>>>>>>> parent of 756cbbc... WOW
