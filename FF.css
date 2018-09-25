@@ -193,3 +193,33 @@
                         width: 200px;
                         animation: anim 10s infinite;
                     }
+		/*CSS для задач*/
+		/*Пример для задач:
+<br> - перенос
+    <table>
+        <tr><th>Пример ввода:</th><th>Пример вывода:</th></tr>
+        <tr>
+            <td>
+                6 5 3<br>
+                12 5 5<br>
+            </td>
+            <td>
+                2<br>
+                7.67 7.49<br>
+                7.67 2.51<br>
+            </td>
+        </tr>
+    </table>
+		*/
+		@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+		 th{
+                    font-family: 'Anonymous Pro', monospace;
+                    border: 4px double black;
+                    background-color: grey;
+                    padding: 10px;
+                }
+                td{
+                    font-family: 'Anonymous Pro', monospace;
+                    border: 4px double black;
+                    padding: 10px;
+                }
