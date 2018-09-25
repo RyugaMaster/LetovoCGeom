@@ -1,0 +1,172 @@
+ @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            /* анимация паровозика */
+            @keyframes anim {
+                 0% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+                30% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(180deg);
+                }
+                50% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(0deg);
+                }
+                80% {
+                    transform: translateX(0px) rotateY(0deg);
+                }
+                100% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+            }
+            /* офориление вашей статьи */
+            #art1 {
+                border-width: 6px;
+                border-color: green;
+                border-style: inset;
+                width: 90vw;
+                background-color: hsla(111, 87%, 90%, 0.5);
+                margin: auto;
+                position: relative;
+                margin-bottom: 5vh;
+                margin-top: 5vh;
+            }
+            /* заголовок статьи */
+            h1 {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 5vw;
+                color: cadetblue;
+            }
+            /* оформление первого параграфа */
+            .brief{
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                display: block;
+                width: 50vw;
+                margin-top: 50px;
+                margin-left : 25vw;
+                font-size: 2vw;
+                color: orange;
+                transition: 1s;
+            }
+            /* подзаголовки */
+            h2 {
+                font-size: 4vw;
+                color: red;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                margin-bottom: 50px;
+            }
+            h2::first-letter{
+                font-size: 8vw;
+                color: blueviolet
+            }
+            /* картинки */
+            .img {
+                position: absolute;
+                width: 50vw;
+                height: 30vw;
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                transition: 3s;
+                left: 5vw;
+            }
+            /* текст сбоку от картинок */
+            .imgdescription{
+                position: absolute;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2vw;
+                width: 27vw;
+                right: 5vw;
+                transition: 1s;
+                color: cadetblue;
+                left : 60vw;
+                top: 14vw;
+            }
+            .imgdescription::first-letter {
+                font-weight: bolder;
+                font-size: 3vw;
+                color: forestgreen;
+            }
+            /* параграфы */
+            p{
+                width: 80vw;
+                margin-left: 5vw;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2.3vw;
+                color: yellowgreen;
+                animation: shadow  2s infinite ease-in-out;
+            }
+            /* видос */
+            .vid {
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                background-position: center;
+                height: 38.6vw;
+                margin-top: 20px;
+                margin-left: 10vw;
+                margin-bottom: 50px;
+            }
+            /* ссылки на задачи */
+            .problem {
+                display: inline-block;
+                border-width: 6px;
+                border-radius: 50%;
+                border-color: green;
+                border-style: outset;
+                text-align: center;
+                width: 25vw;
+                height: 5.5vw;
+                margin-top: 50px;
+                margin-left: calc(3.75vw - 9px);
+                font-family: 'Dancing Script', cursive;
+                font-weight: bold;
+                color: hsl(222, 80%, 59%);
+                font-size: 3vw;
+                text-decoration: none;
+                transition: 1s;
+            }
+            .problem:hover{
+                transform: scale(1.2);
+                border-style: inset;
+            }
+            .hard {
+                background-color: hsla(1, 100%, 50%, 0.5);
+            }
+            .bt {
+                margin-bottom: 50px;
+            }
+            .hard:hover {
+                background-color: hsla(1, 100%, 50%, 1);
+            }
+            .normal {
+                background-color: hsla(58, 100%, 50%, 0.5);
+            }
+            .normal:hover {
+                background-color: hsla(58, 100%, 50%, 1);
+            }
+            .easy {
+                background-color: hsla(125, 100%, 50%, 0.5);
+            }
+            .easy:hover {
+                background-color: hsla(125, 100%, 50%, 1);
+            }
+            /* паровозик */
+            #train {
+                width: 200px;
+                animation: anim 10s infinite;
+            }
+            /* блок для картинки с текстом */
+            .container {
+                position: relative;
+                height: 30vw;
+                margin-bottom: 50px;
+            }
