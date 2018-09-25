@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Задача 2. Точки пересечения</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+        @keyframes anim {  /*Весь anim для поезда, просто не трогайте его*/
+                0% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+                30% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(180deg);
+                }
+                50% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(0deg);
+                }
+                80% {
+                    transform: translateX(0px) rotateY(0deg);
+                }
+                100% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+            }
+/*art1 - внешнее оформление нашей страницы. Просто скопируйте.*/
+                #art1 {
+                    border-width: 6px;
+                    border-color: green;
+                    border-style: inset;
+                    width: 90vw;
+                    background-color: hsla(111, 87%, 90%, 0.5);
+                    margin: auto;
+                    position: relative;
+                    margin-bottom: 5vh;
+                    margin-top: 5vh;
+                }
+ /*Оформление ссылок. Сверху будет панель с ссылками*/  
+    /*Ссылок всего 2 (которые в оглавлении), поэтому brd и brd1. Отличаются только цветом. Я не обощал все в один (т.е для 
+        всего а, потому что в картинке ЛЕТОВО у нас будет ссылка на сайт школы, а оформление
+        картинки другое*/
+/* Общее оформление ссылок*/
+
+                a{
+                    color: yellowgreen;
+                    display: inline-block;
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: red;
+                } 
+/*Оформление 1 ссылки. Цвет: зеленый*/
+                .brd {
+                    border: 2px double black; /* Параметры границы */
+                    background: greenyellow; /* Цвет фона */
+                    padding: 10px; /* Поля вокруг текста */
+                    color: grey;
+                    display: inline-block;
+                    margin-left: 1vw; 
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                   }
+/*HOVER отвечает за изменение объекта при наведение на него мышкой*/
+/*При наведении ссылка немного увеличиться с размере, изменет цвет шрифта на красный*/
+                .brd:hover{
+                    transform: scale(1.1);
+                    border-style: inset;
+                    color: red;
+                }
+/*Собственно оформление для 2 ссылки. Цвет: желтый*/
+                .brd1 {
+                    border: 2px double black; /* Параметры границы */
+                    background: yellow; /* Цвет фона */
+                    padding: 10px; /* Поля вокруг текста */
+                    color: grey;
+                    display: inline-block;
+                    margin-left: 1vw; 
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                   }
+/*Тот же самый HOVER, как и для предыдущей ссылки*/
+                .brd1:hover{
+                    transform: scale(1.1);
+                    border-style: inset;
+                    color: red;
+                    
+                }
+
+ /*Стиль пунктов. Он нужен, если у вас в тексте есть пункты*/
+ /*Оформление пунктов с точками (вместо цифр стоят точки)*/
+                li
+                {
+                    font-family: 'Dancing Script', cursive;
+                    font-weight: bolder;
+                    color: forestgreen;
+                    font-size: 1.5vw;
+                    margin-left: 1.5vw;
+                }
+ /*Оформление пунтков с цифрами*/
+                 ul
+                {
+                    font-family: 'Dancing Script', cursive;
+                    font-weight: bolder;
+                    color: forestgreen;
+                    font-size: 1.5vw;
+                    margin-left: 1.5vw;
+                }
+
+/*Стиль для h1*/
+                h1 {
+                    font-family: 'Dancing Script', cursive;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 5vh;
+                    color: indianred;
+                }
+/*Стиль для h2*/
+                h2 {
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 1vw;
+                    margin-bottom: 50px;
+                   color: cadetblue;
+                    margin-left: 4vw;
+                }
+/*Изменение первой буквы h2*/
+                h2:first-letter {
+                    font-weight: bolder;
+                    font-size: 2vw;
+                    color: forestgreen;
+                }
+/*Стиль для р*/
+                p{
+                    font-family: 'Dancing Script', cursive;
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 1vw;
+                    margin-left: 3vw;
+                    width: 50vw;
+                    color: cadetblue;
+                }
+/*Стиль для первой буквы р*/
+                p::first-letter {
+                    font-weight: bolder;
+                    font-size: 2vw;
+                    color: forestgreen;
+                }
+/*Стиль для видео*/
+                video {
+                    border-width: 6px;
+                    border-color: green;
+                    border-style: outset;
+                    background-position: center;
+                    /*height: 38.6vw;*/
+                    width: 70vw;
+                    margin-top: 100px;
+                    margin-left: calc(10vw - 6px);
+                    margin-bottom: 50px;
+                }
+/*Стиль для логотипа Летово*/
+                #img3{
+                    top: 1vw;
+                    left: 1;
+                    display: inline-block;
+                    margin-right: 1vw;
+                    float: right;
+			         margin: 0px 10px 0px 10px;
+                }   
+/*При наведении на любую картинку, она увеличивается в размере (немного)*/
+                img:hover{
+                    transform: scale(1.1);
+                }
+/*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
+                #img1 {
+                    width: 30vw; /*Можно*/
+                    float: right; /*Нельзя*/
+                    border-width: 6px; /*Нельзя*/
+                    border-color: green;/*Нельзя*/
+                    border-style: outset;/*Нельзя*/
+                    top: 45vw;/*Можно*/
+                    background-position: right; /*Нельзя*/
+                    left: 55vw; /*Можно*/
+                    margin-right: calc(5vw - 6px); /*Нельзя*/
+                }
+/*Это можно не смотреть.*/
+                #img2 {
+                    width: 25vw;
+                    float: right;
+                    border-width: 6px;         
+                    border-color: green;
+                    border-style: outset;
+                    top: 57vw;
+                    background-position: right;
+                    left: 60vw;
+                    margin-right: calc(5vw - 6px);
+                }
+/*Паровозик))*/
+                #train {
+                        width: 200px;
+                        animation: anim 10s infinite;
+                }
+                th{
+                    font-family: 'Anonymous Pro', monospace;
+                    border: 4px double black;
+                    background-color: grey;
+                    padding: 10px;
+                }
+                td{
+                    font-family: 'Anonymous Pro', monospace;
+                    border: 4px double black;
+                    padding: 10px;
+                }
+        </style>
+    </head>
+    <body>
+    <a class = "brd" href = "Video.html"><font color = black>Видео</font></a>
+    <a class = "brd1" href = "Theory.html"><font color = black>Теория</font></a>
+    <a class = "brd1" href = "Z.html"><font color = black>Задачи</font></a>
+    <a href = "https://www.letovo.ru" id = "img3"> <img src="https://letovo.ru/upload/img/logo.png"> </a>
+    <article id = "art1">
+    <h1>Задача 2. Точки пересечения</h1>
+    <img src ="z2.png" alt = пояснение к задаче>
+    <p>Даны две окружности. Определите точки их пересечения</p>
+    <p>Входные данные: в двух строках вводятся x, y (координаты центра) и радиус</p> 
+    <p>Выходные данные: кол-во точек пересечения, их координаты на отдельных строках с точностью в 2 знака после запятой.</p>
+    <table>
+        <tr><th>Пример ввода:</th><th>Пример вывода:</th></tr>
+        <tr>
+            <td>
+                6 5 3<br>
+                12 5 5<br>
+            </td>
+            <td>
+                2<br>
+                7.67 7.49<br>
+                7.67 2.51<br>
+            </td>
+        </tr>
+    </table>
+    <p>Комменатарий: эти входные данные отражены на картинке выше</p>
+    </article>
+    </body>
+</html>
