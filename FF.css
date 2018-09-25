@@ -51,10 +51,6 @@
                 color: orange;
                 transition: 1s;
             }
-            .brief:hover{
-                color: green;
-                transform: scale(1.5) rotate(180deg);
-            }
             /* подзаголовки */
             h2 {
                 font-size: 4vw;
@@ -79,10 +75,6 @@
                 transition: 3s;
                 left: 5vw;
             }
-            .img:hover {
-                transform: rotate(720deg) scale(1.2);
-                left: 10vw;
-            }
             /* текст сбоку от картинок */
             .imgdescription{
                 position: absolute;
@@ -96,9 +88,6 @@
                 color: cadetblue;
                 left : 60vw;
                 top: 14vw;
-            }
-            .imgdescription:hover {
-               color: red;
             }
             .imgdescription::first-letter {
                 font-weight: bolder;
