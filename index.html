@@ -5,6 +5,7 @@
         <title>Пример</title>
         <style>
            @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            /* анимация паровозика */
             @keyframes anim {
                  0% {
                     transform: translateX(0px) rotateY(180deg);
@@ -22,6 +23,7 @@
                     transform: translateX(0px) rotateY(180deg);
                 }
             }
+            /* офориление вашей статьи */
             #art1 {
                 border-width: 6px;
                 border-color: green;
@@ -33,13 +35,15 @@
                 margin-bottom: 5vh;
                 margin-top: 5vh;
             }
-            .h {
+            /* заголовок статьи */
+            h1 {
                 font-family: 'Dancing Script', cursive;
                 text-align: center;
                 font-weight: bolder;
                 font-size: 5vw;
                 color: cadetblue;
             }
+            /* оформление первого параграфа */
             .brief{
                 font-family: 'Dancing Script', cursive;
                 text-align: center;
@@ -56,6 +60,7 @@
                 color: green;
                 transform: scale(1.5) rotate(180deg);
             }
+            /* подзаголовки */
             h2 {
                 font-size: 4vw;
                 color: red;
@@ -68,6 +73,7 @@
                 font-size: 8vw;
                 color: blueviolet
             }
+            /* картинки */
             .img {
                 position: absolute;
                 width: 50vw;
@@ -82,6 +88,7 @@
                 transform: rotate(720deg) scale(1.2);
                 left: 10vw;
             }
+            /* текст сбоку от картинок */
             .imgdescription{
                 position: absolute;
                 font-family: 'Dancing Script', cursive;
@@ -103,6 +110,7 @@
                 font-size: 3vw;
                 color: forestgreen;
             }
+            /* параграфы */
             p{
                 width: 80vw;
                 margin-left: 5vw;
@@ -113,6 +121,7 @@
                 color: yellowgreen;
                 animation: shadow  2s infinite ease-in-out;
             }
+            /* видос */
             #vid {
                 border-width: 6px;
                 border-color: green;
@@ -123,6 +132,7 @@
                 margin-left: 10vw;
                 margin-bottom: 50px;
             }
+            /* ссылки на задачи */
             .problem {
                 display: inline-block;
                 border-width: 6px;
@@ -166,10 +176,12 @@
             .easy:hover {
                 background-color: hsla(125, 100%, 50%, 1);
             }
+            /* паровозик */
             #train {
                 width: 200px;
                 animation: anim 10s infinite;
             }
+            /* блок для картинки с текстом */
             .container {
                 position: relative;
                 height: 30vw;
@@ -180,7 +192,7 @@
     <body>
         <article id="art1">
             <header>
-                <h1 class = "h">Алгоритм Карпа-@@?^?@*</h1>
+                <h1>Алгоритм Карпа-@@?^?@*</h1>
                 <p class = "brief">Очень, очень сложно. Очень очень сложно пресложно. Просто не читайте и живите дальше. И прочее краткое описание.</p>
             </header>
             <main>
