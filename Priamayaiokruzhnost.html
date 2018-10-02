@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Dancing+Script'); 
+        @keyframes anim {  /*Весь anim для поезда, просто не трогайте его*/
+                0% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+                30% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(180deg);
+                }
+                50% {
+                    transform: translateX(calc(90vw - 200px)) rotateY(0deg);
+                }
+                80% {
+                    transform: translateX(0px) rotateY(0deg);
+                }
+                100% {
+                    transform: translateX(0px) rotateY(180deg);
+                }
+            }
+/*art1 - внешнее оформление нашей страницы. Просто скопируйте.*/
+                #art1 {
+                    border-width: 6px;
+                    border-color: green;
+                    border-style: inset;
+                    width: 90vw;
+                    background-color: hsla(111, 87%, 90%, 0.5);
+                    margin: auto;
+                    position: relative;
+                    margin-bottom: 5vh;
+                    margin-top: 5vh;
+                }
+ /*Оформление ссылок. Сверху будет панель с ссылками*/  
+    /*Ссылок всего 2 (которые в оглавлении), поэтому brd и brd1. Отличаются только цветом. Я не обощал все в один (т.е для 
+        всего а, потому что в картинке ЛЕТОВО у нас будет ссылка на сайт школы, а оформление
+        картинки другое*/
+/* Общее оформление ссылок*/
+                a{
+                    color: yellowgreen;
+                    display: inline-block;
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: red;
+                } 
+/*Оформление 1 ссылки. Цвет: зеленый*/
+                .brd {
+                    border: 2px double black; /* Параметры границы */
+                    background: greenyellow; /* Цвет фона */
+                    padding: 10px; /* Поля вокруг текста */
+                    color: grey;
+                    display: inline-block;
+                    margin-left: 1vw; 
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                   }
+/*HOVER отвечает за изменение объекта при наведение на него мышкой*/
+/*При наведении ссылка немного увеличиться с размере, изменет цвет шрифта на красный*/
+                .brd:hover{
+                    transform: scale(1.1);
+                    border-style: inset;
+                    color: red;
+                }
+/*Собственно оформление для 2 ссылки. Цвет: желтый*/
+                .brd1 {
+                    border: 2px double black; /* Параметры границы */
+                    background: yellow; /* Цвет фона */
+                    padding: 10px; /* Поля вокруг текста */
+                    color: grey;
+                    display: inline-block;
+                    margin-left: 1vw; 
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                   }
+/*Тот же самый HOVER, как и для предыдущей ссылки*/
+                .brd1:hover{
+                    transform: scale(1.1);
+                    border-style: inset;
+                    color: red;
+                    
+                }
+ /*Стиль пунктов. Он нужен, если у вас в тексте есть пункты*/
+ /*Оформление пунктов с точками (вместо цифр стоят точки)*/
+                li
+                {
+                    font-family: 'Dancing Script', cursive;
+                    font-weight: bolder;
+                    color: forestgreen;
+                    font-size: 1.5vw;
+                    margin-left: 1.5vw;
+                }
+ /*Оформление пунтков с цифрами*/
+                 ul
+                {
+                    font-family: 'Dancing Script', cursive;
+                    font-weight: bolder;
+                    color: forestgreen;
+                    font-size: 1.5vw;
+                    margin-left: 1.5vw;
+                }
+/*Стиль для h1*/
+                h1 {
+                    font-family: 'Dancing Script', cursive;
+                    text-align: center;
+                    font-weight: bolder;
+                    font-size: 5vh;
+                    color: indianred;
+                }
+/*Стиль для h2*/
+                h2 {
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 1vw;
+                    margin-bottom: 50px;
+                   color: cadetblue;
+                    margin-left: 4vw;
+                }
+/*Изменение первой буквы h2*/
+                h2:first-letter {
+                    font-weight: bolder;
+                    font-size: 2vw;
+                    color: forestgreen;
+                }
+/*Стиль для р*/
+                p{
+                    font-family: 'Dancing Script', cursive;
+                    text-align: left;
+                    font-weight: bold;
+                    font-size: 1vw;
+                    margin-left: 3vw;
+                    width: 50vw;
+                    color: cadetblue;
+                }
+/*Стиль для первой буквы р*/
+                p::first-letter {
+                    font-weight: bolder;
+                    font-size: 2vw;
+                    color: forestgreen;
+                }
+/*Стиль для видео*/
+                video {
+                    border-width: 6px;
+                    border-color: green;
+                    border-style: outset;
+                    background-position: center;
+                    /*height: 38.6vw;*/
+                    width: 70vw;
+                    margin-top: 100px;
+                    margin-left: calc(10vw - 6px);
+                    margin-bottom: 50px;
+                }
+/*Стиль для логотипа Летово*/
+                #img3{
+                    top: 1vw;
+                    left: 1;
+                    display: inline-block;
+                    margin-right: 1vw;
+                    float: right;
+			         margin: 0px 10px 0px 10px;
+                }   
+/*При наведении на любую картинку, она увеличивается в размере (немного)*/
+                img:hover{
+                    transform: scale(1.1);
+                }
+/*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
+                #img1 {
+                    float: right; /*Нельзя*/
+                    border-width: 6px; /*Нельзя*/
+                    border-color: green;/*Нельзя*/
+                    border-style: outset;/*Нельзя*/
+                    top: 45vw;/*Можно*/
+                    background-position: right; /*Нельзя*/
+                    left: 55vw; /*Можно*/
+                    margin-right: calc(5vw - 6px); /*Нельзя*/
+                }
+/*Это можно не смотреть.*/
+                #img2 {
+                    width: 25vw;
+                    float: right;
+                    border-width: 6px;         
+                    border-color: green;
+                    border-style: outset;
+                    top: 57vw;
+                    background-position: right;
+                    left: 60vw;
+                    margin-right: calc(5vw - 6px);
+                }
+/*Паровозик))*/
+                #train {
+                        width: 200px;
+                        animation: anim 10s infinite;
+                    }
+		</style>
+		<title>Взаимное расположение прямой и окружности</title>
+	</head>
+	<body>
+		<article  id = "art1">
+		<h1 align = "center">Взаимное расположение прямой и окружности</h1>
+		<img src="https://cdn1.savepice.ru/uploads/2018/10/1/8b31a70fd71507478b9ee886baf83683-full.png" alt ="3 варианта", align = "right", height = 750, id = "img1"/>
+		<font size ="4"><p>Как Вы можете знать из школьного курса геометрии, прямая и окружность могут пересекаться в 0, 1 или 2 точках (рис 1). Количество точек пересечения зависит от длины перпендикуляра, опущенного на прямую из центра (O) окружности. Если его длина меньше радиуса (R) окружности, то точек пересечения 2, если она равна радиусу, то точка 1 (в таком случае прямая <em>касается</em> окружности. Если же длина перпендикуляра больше радиуса, то прямая вообще не пересекается с окружностью. В этой главе мы попытаемся объяснить Вам, как можно определить количество точек пересечения прямой и окружности и даже найти эти точки.</p>
+<p>Допустим, у нас есть окружность с центром в координате (x<sub>1</sub>, y<sub>1</sub>) и радиусом R, а также прямая, описанная уравнением <img src="https://latex.codecogs.com/gif.latex?{\color{Teal}&space;Ax&space;&plus;&space;By&space;&plus;&space;C&space;=&space;0}" title="Ax + By + C = 0" height = 15 /></a>.
+Для облегчения расчетов “перенесем” плоскость так, чтобы центр окружности попал в точку (0, 0)</p>
+<p >Найдем ближайшую к центру окружности точку прямой (K). Очевидно, что эта точка лежит на перпендикуляре к прямой, проходящем через центр.  Возьмем две точки на прямой (D и E) и построим вектор, соединяющий их. Этот вектор коллинеарен изначальной прямой и перпендикулярен вектору, соединяющему центр окружности и искомую точку, значит скалярное произведение этих двух векторов равно нулю.</p>
+<p>Решим систему    <img src="https://latex.codecogs.com/gif.latex?{\color{Teal}&space;\begin{cases}\vec{OK}*\vec{DE}=0\\Ax&plus;By&plus;C=0\end{cases}}" title="\begin{cases}\vec{OK}*\vec{DE}=0\\Ax+By+C=0\end{cases}" height = 40 /></a>      и найдем расстояние от O до полученной точки. Это расстояние уже может показать количество точек пересечения в зависимости о того, больше оно радиуса, меньше или равно.
+Если расстояние больше радиуса, то точек пересечения нет.
+Если равно, то найденная точка K – и есть единственная точка пересечения
+Если же расстояние меньше радиуса, то существует две точки пересечения. По теореме Пифагора расстояние от К до этих точек равны <img src="https://latex.codecogs.com/gif.latex?{\color{Teal}&space;\sqrt{R^2&space;-&space;|\vec{OK}|}}" title="\sqrt{R^2 - |\vec{OK}|}" height = 30 /></a>. Если взять вектор, параллельный прямой (А, -В) и прибавить его к точке К, то мы получим первую точку пересечения, если же прибавить вектор (-А, В), то получится вторая точка</p></font>
+<br>
+<br>
+<h2> Задачи по теме</h2>
+<ul>
+<li><a href = "https://informatics.msk.ru/mod/statements/view3.php?id=33365&chapterid=277">Задача про перпендикуляр</a></li>
+<li><a href = "https://informatics.msk.ru/mod/statements/view3.php?id=1158&chapterid=284">Собственно тема главы</a></li>
+</ul>
+<ul><h2>Средней сложности</h2>
+<li><a href = "<li><a href = "https://informatics.msk.ru/mod/statements/view3.php?id=33365&chapterid=1360"> Зал круглых столов</a></li>
+</ul>
+<ul><h2>Сложные</h2>
+<li><a href = "<li><a href = "https://informatics.msk.ru/mod/statements/view3.php?id=30030&chapterid=3870"> Космический кегельбан</a></li>
+</ul>
+
+<footer>
+                <img id = "train"  src = "http://nachalo4ka.ru/wp-content/uploads/2015/01/parovozik-3.png" alt = "Паровозик">
+            </footer>
+            </article>
+		</body>
