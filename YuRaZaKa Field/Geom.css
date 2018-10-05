@@ -193,6 +193,8 @@
                     display: inline-block;
                     font-family: 'Dancing Script', cursive;
                     text-decoration: none;
+                    left:10wv;
+                    font-size: 17px;
                 }
                 a:hover{
                     color: red;
@@ -306,21 +308,29 @@
                 }
 /*Стиль для логотипа Летово*/
                 #img3{
-                    top: 1vw;
-                    left: 1;
                     display: inline-block;
-                    margin-right: 1vw;
+                    top: 0vw;
+                    right: 0vw;
                     float: right;
 			         margin: 0px 10px 0px 10px;
+                    position: absolute;
                 }   
 /*При наведении на любую картинку, она увеличивается в размере (немного)*/
                 img:hover{
                     transform: scale(1.1);
-			 left: 55vw;  
                 }
 /*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
                 #img1 {
                     float: right; /*Нельзя*/
+                    border-width: 6px; /*Нельзя*/
+                    border-color: green;/*Нельзя*/
+                    border-style: outset;/*Нельзя*/
+                    top: 45vw;/*Можно*/
+                    background-position: right; /*Нельзя*/
+                    left: 55vw; /*Можно*/
+                    margin-right: calc(5vw - 6px); /*Нельзя*/
+                }
+                #img4 {
                     border-width: 6px; /*Нельзя*/
                     border-color: green;/*Нельзя*/
                     border-style: outset;/*Нельзя*/
