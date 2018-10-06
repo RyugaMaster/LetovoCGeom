@@ -95,7 +95,7 @@
             }
             /* параграфы */
             p{
-                width: 80vw;
+                /*width: 80vw;*/
                 margin-left: 5vw;
                 font-family: 'Dancing Script', cursive;
                 text-align: center;
