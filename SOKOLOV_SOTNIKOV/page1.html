@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="shortcut icon" href="https://github.com/RyugaMaster/LetovoCGeom/blob/master/SOKOLOV_SOTNIKOV/icon.png" type="image/png">
-		<link rel="stylesheet" href="https://github.com/RyugaMaster/LetovoCGeom/blob/master/SOKOLOV_SOTNIKOV/view.css"> 
+		<link rel="shortcut icon" href="icon.png" type="image/png">
+		<link rel="stylesheet" href="view.css">
 		<title>Точка и многоульник</title>
 	</head>
 	<body>
@@ -12,13 +12,13 @@
         <br><br> <br> <br> <br> <br>
         <hr>
         <a  href="" class = "brd"> Главная страница</a>
-        <a  href="https://github.com/RyugaMaster/LetovoCGeom/blob/master/SOKOLOV_SOTNIKOV/page2.html" class = "brd1"> Видео</a>
+        <a  href="page2.html" class = "brd1"> Видео</a>
         <hr>
         <h1 class = "h"> Взаимное расположение точки и многоугольника. </h1> <hr>
         
 		
 		<br>  
-		<h2 class="hh"> Сегодня мы рассмотрим алгоритмы определения взаимного расположения точки и многоугольника. </h2> <img id = "img1" src="https://github.com/RyugaMaster/LetovoCGeom/blob/master/SOKOLOV_SOTNIKOV/photo1.png">
+		<h2 class="hh"> Сегодня мы рассмотрим алгоритмы определения взаимного расположения точки и многоугольника. </h2> <img id = "img1" src="photo1.png">
         <br>
         <ul>
             <li id = "li"> <i><b>Общий случай:</b></i> </li>
@@ -32,7 +32,7 @@
                 Это довольно простая задача, поэтому я могу дать вам только подсказку: Используйте  <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D1%81%D0%BA%D0%B0%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5">псевдоскалярное произведение векторов</a>.  Существует и другой алгоритм.  </p>
             <br> <br> <br> <br> <br> 
             <li id = "li"> <b>Определения взаимного расположения точки и <a href="https://ru.wikipedia.org/wiki/%D0%92%D1%8B%D0%BF%D1%83%D0%BA%D0%BB%D1%8B%D0%B9_%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA"> выпуклого </a> многоугольника:</b> </li>
-            <img id = "img2"  src="https://github.com/RyugaMaster/LetovoCGeom/blob/master/SOKOLOV_SOTNIKOV/photo2.png" alt="Рисунок">
+            <img id = "img2"  src="photo2.png" alt="Рисунок">
             <p id = "p1"> Рассмотрим произвольный выпуклый многоугольник <b><i>N</i></b> и точку <b><i>B</i></b> (см. рисунок). Выберем любую вершину и назовем ее <b><i>P0</i> </b>.Проведем лучи из <b> <i>P0</i></b> в каждую вершину многоугольника. <br> Введем l=1 и r=n-1, где <b>n</b>-количество углов многоугольника и целочисленный  c=(l+r)/2.  Возьмем точку под номером c, l,  и r, назовем из точками <b>C, Pl </b>  и<b> Pr</b> соответственно. 
                 <br> <br> Определим, в каком углу лежит точка <b><i>B</i></b> – в <b><i>PlP0C</i></b> или <b><i>CP0Pr</i></b>. Если в <b><i>PlP0C</i></b>, тогда <b><i>r</i></b> приравниваем к <b><i>C</i></b> и снова высчитываем <b><i>C</i></b>. Если углу <b><i>CP0Pr</i></b>, тогда <b><i>l</i></b> приравниваем к <b><i>C</i></b> и снова высчитываем <b><i>C</i></b>.  Если точка не принадлежит никакому из углов, тогда точка лежит вне многоугольника. И так повторяем, пока вершины <b><i>Pl</i></b> и <b><i>Pr</i></b> не станут соседними.
 	Мы определили, какому углу принадлежит точка <b><i>B</i></b>.  Проведем отрезок <b><i>P0B</i></b>.  Если отрезок пересекается с отрезком <b><i>PlPr</i></b>, тогда точка <b><i>B</i></b> лежит вне многоугольника, если же не пересекаются, тогда, точка <b><i>B</i></b> лежит внутри многоугольника. <br> <br> 
