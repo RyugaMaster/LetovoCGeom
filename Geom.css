@@ -146,7 +146,6 @@
                     border-style: outset;
                     background-position: center;
                     /*height: 38.6vw;*/
-                    width: 70vw;
                     margin-top: 100px;
                     margin-left: calc(10vw - 6px);
                     margin-bottom: 50px;
@@ -176,7 +175,6 @@
                 }
 /*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
                 #img1 {
-                    width: 30vw; /*Можно*/
                     float: right; /*Нельзя*/
                     border-width: 6px; /*Нельзя*/
                     border-color: green;/*Нельзя*/
@@ -188,7 +186,6 @@
                 }
 /*Это можно не смотреть.*/
                 #img2 {
-                    width: 30vw;
                     float: right;
                     border-width: 6px;         
                     border-color: green;

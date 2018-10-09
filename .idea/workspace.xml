@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555c7910-7045-4e99-9ec6-ae147b2e195c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html" beforeDir="false" afterPath="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/view.css" beforeDir="false" />
-    </list>
+    <list default="true" id="555c7910-7045-4e99-9ec6-ae147b2e195c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Theory.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Theory.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Theory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -56,33 +50,46 @@
       <file leaf-file-name="Video.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Geom.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Geom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="page2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Z.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Z1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Z2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -93,11 +100,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/YuRaZaKa Field/Theory.html" />
         <option value="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_text.html" />
         <option value="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html" />
         <option value="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page1.html" />
         <option value="$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html" />
+        <option value="$PROJECT_DIR$/YuRaZaKa Field/Theory.html" />
+        <option value="$PROJECT_DIR$/YuRaZaKa Field/Video.html" />
+        <option value="$PROJECT_DIR$/YuRaZaKa Field/Z.html" />
+        <option value="$PROJECT_DIR$/YuRaZaKa Field/Z1.html" />
+        <option value="$PROJECT_DIR$/YuRaZaKa Field/Z2.html" />
       </list>
     </option>
   </component>
@@ -279,16 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Theory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Geom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -300,13 +301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="48" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Video.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -325,7 +319,7 @@
     <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Geom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-748">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -338,8 +332,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Video.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Theory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
