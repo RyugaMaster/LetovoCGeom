@@ -151,6 +151,16 @@
                     margin-left: calc(10vw - 6px);
                     margin-bottom: 50px;
                 }
+		 iframe {
+                        border-width: 6px;
+                        border-color: green;
+                        border-style: outset;
+                        background-position: center;
+                        /*height: 38.6vw;*/
+                        margin-top: 100px;
+                        margin-left: calc(10vw - 6px);
+                        margin-bottom: 50px;
+    }
 /*Стиль для логотипа Летово*/
                 #img3{
                     top: 1vw;
