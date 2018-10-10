@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="555c7910-7045-4e99-9ec6-ae147b2e195c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Plisov_Gogachev/Materials/1Diameter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plisov_Gogachev/Materials/2Diameter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plisov_Gogachev/Materials/3Diameter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plisov_Gogachev/Materials/4Diameter.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plisov_Gogachev/Materials/5Diameter.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Geom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +27,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetDiameter_video.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SetDiameter_video.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3Diameter.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/3Diameter.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="2Diameter.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/2Diameter.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="1Diameter.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/1Diameter.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="5Diameter.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/5Diameter.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="4Diameter.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/4Diameter.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="page1.html" pinned="false" current-in-tab="false">
@@ -47,42 +75,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="483">
               <caret line="150" column="17" lean-forward="true" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Video.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SOKOLOV_SOTNIKOV/page2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Z.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Z1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YuRaZaKa Field/Z1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -123,9 +115,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1386" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -147,6 +138,12 @@
               <item name="LetovoCGeom" type="b2602c69:ProjectViewProjectNode" />
               <item name="LetovoCGeom" type="462c0819:PsiDirectoryNode" />
               <item name="Plisov_Gogachev" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LetovoCGeom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LetovoCGeom" type="462c0819:PsiDirectoryNode" />
+              <item name="Plisov_Gogachev" type="462c0819:PsiDirectoryNode" />
+              <item name="Materials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LetovoCGeom" type="b2602c69:ProjectViewProjectNode" />
@@ -173,6 +170,12 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryu\Documents\GitHub\LetovoCGeom\Plisov_Gogachev\Materials" />
+      <recent name="C:\Users\Ryu\Documents\GitHub\LetovoCGeom\Plisov_Gogachev" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -436,10 +439,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/SetDiameter_video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/1Diameter.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/2Diameter.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/3Diameter.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/4Diameter.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plisov_Gogachev/Materials/5Diameter.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
