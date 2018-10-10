@@ -18,7 +18,7 @@
                 }
             }
 /*art1 - внешнее оформление нашей страницы. Просто скопируйте.*/
-                #art1 {
+                article {
                     border-width: 6px;
                     border-color: green;
                     border-style: inset;
@@ -173,14 +173,13 @@
                 }
 /*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
                 #img1 {
-                    float: right; /*Нельзя*/
                     border-width: 6px; /*Нельзя*/
                     border-color: green;/*Нельзя*/
                     border-style: outset;/*Нельзя*/
-                    top: 45vw;/*Можно*/
-                    background-position: right; /*Нельзя*/
-                    left: 60vw; /*Можно*/
-                    margin-right: calc(4vw - 6px); /*Нельзя*/
+                    margin: auto;
+                    display: block;
+                    margin-top: auto;
+                    margin-bottom: auto;
                 }
 /*Это можно не смотреть.*/
                 #img2 {
