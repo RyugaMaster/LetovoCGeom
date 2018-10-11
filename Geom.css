@@ -18,7 +18,7 @@
                 }
             }
 /*art1 - внешнее оформление нашей страницы. Просто скопируйте.*/
-                #art1 {
+                article {
                     border-width: 6px;
                     border-color: green;
                     border-style: inset;
@@ -130,7 +130,6 @@
                     font-weight: bold;
                     font-size: 1vw;
                     margin-left: 3vw;
-                    width: 50vw;
                     color: cadetblue;
                 }
 /*Стиль для первой буквы р*/
@@ -146,18 +145,16 @@
                     border-style: outset;
                     background-position: center;
                     /*height: 38.6vw;*/
-                    width: 70vw;
                     margin-top: 100px;
                     margin-left: calc(10vw - 6px);
                     margin-bottom: 50px;
                 }
-		 iframe {
+		    iframe{
                         border-width: 6px;
                         border-color: green;
                         border-style: outset;
-                        background-position: center;
-                        /*height: 38.6vw;*/
                         margin-top: 100px;
+                        background-position: center;
                         margin-left: calc(10vw - 6px);
                         margin-bottom: 50px;
     }
@@ -176,19 +173,16 @@
                 }
 /*Стиль для частной картинки. Это чисто мое оформление одной из картинок. Внизу помечено, что можно менять, что не нужно(для общего стиля всей группы)*/
                 #img1 {
-                    width: 30vw; /*Можно*/
-                    float: right; /*Нельзя*/
                     border-width: 6px; /*Нельзя*/
                     border-color: green;/*Нельзя*/
                     border-style: outset;/*Нельзя*/
-                    top: 45vw;/*Можно*/
-                    background-position: right; /*Нельзя*/
-                    left: 60vw; /*Можно*/
-                    margin-right: calc(4vw - 6px); /*Нельзя*/
+                    margin: auto;
+                    display: block;
+                    margin-top: auto;
+                    margin-bottom: auto;
                 }
 /*Это можно не смотреть.*/
                 #img2 {
-                    width: 30vw;
                     float: right;
                     border-width: 6px;         
                     border-color: green;
