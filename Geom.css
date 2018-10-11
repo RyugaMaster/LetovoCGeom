@@ -202,6 +202,31 @@
                     left: 60vw;
                     margin-right: calc(4vw - 6px);
                 }
+	/* НЕ ТРОГАЙТЕ, ПРОШУ!*/
+					#imgs1 {
+					    width: 30vw; /*Можно*/
+					    float: right; /*Нельзя*/
+					    border-width: 6px; /*Нельзя*/
+					    border-color: green;/*Нельзя*/
+					    border-style: outset;/*Нельзя*/
+					    top: 45vw;/*Можно*/
+					    background-position: right; /*Нельзя*/
+					    left: 60vw; /*Можно*/
+					    margin-right: calc(4vw - 6px); /*Нельзя*/
+					}
+			/*Это можно не смотреть.*/
+					#imgs2 {
+					    width: 30vw;
+					    float: right;
+					    border-width: 6px;         
+					    border-color: green;
+					    border-style: outset;
+					    top: 60vw;
+					    background-position: right;
+					    left: 60vw;
+					    margin-right: calc(4vw - 6px);
+					}
+/*КОНЕЦ*/
 /*Паровозик))*/
                 #train {
                         width: 200px;
