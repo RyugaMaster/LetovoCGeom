@@ -4,6 +4,34 @@
         <meta charset="utf-8"/>
         <title>Здравствуй, Геометрия!</title>
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            .andrey-article {
+                border-width: 6px;
+                border-color: green;
+                border-style: inset;
+                width: 90vw;
+                background-color: hsla(111, 87%, 90%, 0.5);
+                margin: auto;
+                position: relative;
+                margin-bottom: 5vh;
+                margin-top: 100px;
+            }
+            .andrey-topic {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 7vh;
+                color: cadetblue;
+            }
+            .andrey-menu {
+                position: fixed;
+                border:5px green outset;
+                width: calc(100vw - 29px);
+                height: 70px;
+                background-color: hsla(111, 12%, 83%, 0.72);
+                top: 0;
+                left: 0;
+            }
             svg{
                 display: block;
                 border:5px green inset;
@@ -11,9 +39,119 @@
                 margin-bottom: 50px;
                 background-color: aliceblue;
             }
+            #img1 {
+                position: absolute;
+                width: 50vw;
+                height: 30vw;
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                top: calc(26vh + 50px);
+                left: 5vw;
+            }
+            #p1{
+                position: absolute;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2vw;
+                width: 27vw;
+                right: 5vw;
+                color: cadetblue;
+                top: calc(26vh + 50px);
+            }
+            #p1:hover {
+               color: red;
+            }
+            #p1::first-letter {
+                font-weight: bolder;
+                font-size: 3vw;
+                color: forestgreen;
+            }
+            #p1:hover::first-letter{
+                color: blue;
+            }
+            .p2{
+                width: 80vw;
+                margin-left: 5vw;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2.3vw;
+                color: yellowgreen;
+            }
+            #fp {
+                margin-top: calc(35vw + 60px);
+            }
+            #vid1 {
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                background-position: center;
+                height: 38.6vw;
+                margin-top: 20px;
+                margin-left: 10vw;
+                margin-bottom: 50px;
+            }
+            .hh {
+                font-size: 5vh;
+                margin-bottom: 50px;
+            }
+            .problem {
+                display: inline-block;
+                border-width: 6px;
+                border-radius: 50%;
+                border-color: green;
+                border-style: outset;
+                text-align: center;
+                width: 25vw;
+                height: 5.5vw;
+                margin-top: 50px;
+                margin-left: calc(3.75vw - 9px);
+                font-family: 'Dancing Script', cursive;
+                font-weight: bold;
+                color: hsl(222, 80%, 59%);
+                font-size: 3vw;
+                text-decoration: none;
+            }
+            .problem:hover{
+                transform: scale(1.2);
+                border-style: inset;
+            }
+            .hard {
+                background-color: hsla(1, 100%, 50%, 0.5);
+            }
+            .bt {
+                margin-bottom: 50px;
+            }
+            .hard:hover {
+                background-color: hsla(1, 100%, 50%, 1);
+            }
+            .normal {
+                background-color: hsla(58, 100%, 50%, 0.5);
+            }
+            .normal:hover {
+                background-color: hsla(58, 100%, 50%, 1);
+            }
+            .easy {
+                background-color: hsla(125, 100%, 50%, 0.5);
+            }
+            .easy:hover {
+                background-color: hsla(125, 100%, 50%, 1);
+            }
         </style>
     </head>
     <body>
+        <article class = "andrey-article">
+            <header>
+                <div class="andrey-menu">
+                
+                </div>
+                <h1 class = "andrey-topic">
+                    Алгоритм Джарвиса
+                </h1>
+            </header>
+            <main>
                 <svg id="s" version="1.1" width="50vw" height="50vw" viewBox="0 -300 300 400" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <circle r="2" cy="-101" cx="145" style="fill:#000;"></circle>
                     <circle r="2" cy="-201" cx="35" style="fill:#000;"></circle>
@@ -27,6 +165,40 @@
                         <animate attributeName="d" values="M 340,-290 L -40,-290 -40,90 150,90 340,90 340,-250 z; M 205,-231 L 35,-201 65,-31 175,40 270,20 245,-161 z" begin="s.click" dur="5s" fill = "freeze"/>
                     </path>
                 </svg>
+                <svg id="s2" version="1.1" width="50vw" height="50vw" viewBox="0 -300 300 400" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle r="80" cy="-41" cx="95" style="fill:none;stroke-width:3;"></circle>
+                    <circle r="100" cy="-161" cx="195" style="fill:none;stroke-width:3;"></circle>
+                    <circle r="2" cy="-41" cx="95" style="fill:#000;"></circle>
+                    <circle r="2" cy="-161" cx="195" style="fill:#000;"></circle>
+                    <path d="M 195,-161 L 95,-41" style="stroke:#000;stroke-width:3;fill:none">
+                        <animate attributeName="d" values="M 195,-161 L 95,-41; M 195,-161 L 131,-87; M 195,-161 L 131,-87; M 195,-161 L 172,-63.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41, L 100,-41" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41, L 100,-41; M 131,-87 L 136,-87; M 131,-87 L 136,-87; M 172,-63.5 L 176,-65.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41 L 95,-46" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41 L 95,-46; M 131,-87 L 131,-92; M 131,-87 L 131,-92; M 172,-63.5 L 169.5,-68.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 195,-161 L 95,-41" style="stroke:#000;stroke-width:3;fill:none">
+                        <animate attributeName="d" values="M 195,-161 L 95,-41; M 195,-161 L 131,-87; M 195,-161 L 131,-87; M 195,-161 L 103,-121" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path id="M 95,-41, L 100,-41" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41, L 100,-41; M 131,-87 L 136,-87; M 131,-87 L 136,-87; M 103,-121 L 107.5,-118" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41 L 95,-46" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41 L 95,-46; M 131,-87 L 131,-92; M 131,-87 L 131,-92; M 103,-121 L 104.5,-125" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                </svg>
+            </main>
+            <footer>
+                
+            </footer>
+        </article>
     </body>
 </html>
-
