@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Здравствуй, Геометрия!</title>
+        <style>
+            svg{
+                display: block;
+                border:5px green inset;
+                margin: auto;
+                margin-bottom: 50px;
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+                <svg id="s" version="1.1" width="50vw" height="50vw" viewBox="0 -300 300 400" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle r="2" cy="-101" cx="145" style="fill:#000;"></circle>
+                    <circle r="2" cy="-201" cx="35" style="fill:#000;"></circle>
+                    <circle r="2" cy="-231" cx="205" style="fill:#000;"></circle>
+                    <circle r="2" cy="-31" cx="65" style="fill:#000;"></circle>
+                    <circle r="2" cy="20" cx="270" style="fill:#000;"></circle>
+                    <circle r="2" cy="40" cx="175" style="fill:#000;"></circle>
+                    <circle r="2" cy="-161" cx="245" style="fill:#000;"></circle>
+                    <circle r="2" cy="-40" cx="235" style="fill:#000;"></circle>
+                    <path id = "p1" d="M 340,-290 L -40,-290 -40,90 150,90 340,90 340,-250 z" style="stroke:#000;stroke-width:3;fill:none">
+                        <animate attributeName="d" values="M 340,-290 L -40,-290 -40,90 150,90 340,90 340,-250 z; M 205,-231 L 35,-201 65,-31 175,40 270,20 245,-161 z" begin="s.click" dur="5s" fill = "freeze"/>
+                    </path>
+                </svg>
+    </body>
+</html>
 
