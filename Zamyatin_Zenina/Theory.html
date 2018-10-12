@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <title>Взаимное расположение двух окружностей. Теория и задачи</title>
         <link rel="stylesheet" href="../Geom.css">
+        <style>
+        #s2{
+                    display: block;
+                    border:5px green inset;
+                    margin: auto;
+                    margin-bottom: 50px;
+                    background-color: white;
+                }
+        </style>
     </head>
     <body>
         <a class = "brd" href = "Video.html"><font color = black>Видео</font></a>
@@ -46,17 +55,47 @@
         <h2>Точки пересечения двух окружностей</h2>
         <p>Предположим, A и B пересекаются в двух точках. Найдем эти точки пересечения.</p>  
         <p>Для этого вектор от a до точки P, которая лежит на окружности A и лежит на OaOb. Для этого надо взять вектор b - a, который и будет являтся вектором между двумя центрами, нормализовать (заменить на сонаправленный единичный вектор) и умножить на Ra. Получившийся вектор обозначим как p. Эту конфигурацию можете видеть на рис. 6</p>
-        <img src = "Materials/PFormula.png" alt = "PFormula">
+        <img src = "Materials/PFormula.png" alt = "PFormula" id = "img1">
         <p></p>
-        <img src = "Materials/Пересечение.png" alt = "PPicture" id = "img4">
+        <img src = "Materials/Пересечение.png" alt = "PPicture" id = "img1">
         <p>Рис. 6. Вектора a,b,p и где они обитают.</p>
         <p>Обозначим i1 и i2 как вектора от a до точек пересечения I1 и I2 двух окружностей. Становится очевидно, что i1 и i2 получаются поворотом из p. Т.к. нам известны все стороны треугольников OaI1Ob и OaI2Ob (Радиусы и расстояние между центрами), мы можем получить этот угол fi, поворот на которого вектор p в одну сторону даст I1, а в другую I2.</p>
         <p>По теореме косинусов, он равен:</p>
-        <img src = "Materials/FiFormula.png" alt = "FiFormula">
+        <img src = "Materials/FiFormula.png" alt = "FiFormula" id = "img1">
         <p>Если повернуть p на fi, то получится i1 или i2, взависимости от того, в какую сторону поворачивать. Далее вектор i1 или же i2 надо сложить с a для получения точки пересечения</p>
         <p>Этот метод сработает даже если центр одной окружности лежит внутри другой. Но там точно вектор p придется задавать в направлении от a к b, что мы и делали. Если строить p, опираясь на другую окружность, то тогда ничего не выйдет</p>
-        <p>Ну и в заключение ко всему надо упоминуть один факт: если окружности касаются, то несложно убедится, что P и есть точка касания (это верно и для внутреннего, и для внешнего касания)</p>
-        <a href = "Z2.html"><pre>   Задача 2: Точки пересечения</pre></a>
+        <p>Ну и в заключение ко всему надо упоминуть один факт: если окружности касаются, то несложно убедится, что P и есть точка касания (это верно и для внутреннего, и для внешнего касания).<br>Здесь вы можете видеть визуализацию (для запуска нужно кликнуть).</p>
+        <svg id="s2" version="1.1" width="50vw" height="50vw" viewBox="0 -300 300 400" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle r="80" cy="-41" cx="95" style="fill:none;stroke-width:3;"></circle>
+                    <circle r="100" cy="-161" cx="195" style="fill:none;stroke-width:3;"></circle>
+                    <circle r="2" cy="-41" cx="95" style="fill:#000;"></circle>
+                    <circle r="2" cy="-161" cx="195" style="fill:#000;"></circle>
+                    <path d="M 195,-161 L 95,-41" style="stroke:#000;stroke-width:3;fill:none">
+                        <animate attributeName="d" values="M 195,-161 L 95,-41; M 195,-161 L 131,-87; M 195,-161 L 131,-87; M 195,-161 L 172,-63.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41, L 100,-41" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41, L 100,-41; M 131,-87 L 136,-87; M 131,-87 L 136,-87; M 172,-63.5 L 176,-65.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41 L 95,-46" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41 L 95,-46; M 131,-87 L 131,-92; M 131,-87 L 131,-92; M 172,-63.5 L 169.5,-68.5" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #f00" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 195,-161 L 95,-41" style="stroke:#000;stroke-width:3;fill:none">
+                        <animate attributeName="d" values="M 195,-161 L 95,-41; M 195,-161 L 131,-87; M 195,-161 L 131,-87; M 195,-161 L 103,-121" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path id="M 95,-41, L 100,-41" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41, L 100,-41; M 131,-87 L 136,-87; M 131,-87 L 136,-87; M 103,-121 L 107.5,-118" begin="s2.click" dur="5s" fill = "freeze"/>
+                         <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+                    <path d="M 95,-41 L 95,-46" style="stroke:#000;stroke-width:2;fill:none">
+                        <animate attributeName="d" values="M 95,-41 L 95,-46; M 131,-87 L 131,-92; M 131,-87 L 131,-92; M 103,-121 L 104.5,-125" begin="s2.click" dur="5s" fill = "freeze"/>
+                        <animate attributeName="stroke" values="#000; #000; #000; #00b" begin="s2.click" dur="5s" fill = "freeze"/>
+                    </path>
+        </svg>        
+        <br><a href = "Z2.html"><pre>       Задача 2: Точки пересечения</pre></a>
         <p>Этот метод рабочий, но вместо угла поворота можно вычислить его косинус, а через него синус, после чего использовать уже их при повороте вектора. Это существенно упростит вычисления, избавив код от тригонометрических функций.</p>
         <img id = "train"  src = "http://nachalo4ka.ru/wp-content/uploads/2015/01/parovozik-3.png" alt = "Паровозик">
         </article>
