@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8"/>
         <title>Здравствуй, Геометрия!</title>
-        <style>
-            svg{
-                display: block;
-                border:5px green inset;
-                margin: auto;
-                width: 500px;
-            }
-            #wings:hover{
-                transform: translateX(200x);
-            }
-        </style>
+        <link rel="stylesheet" href="Geom.css">
     </head>
     <body>
-        <svg id = "svg" xmlns="http://www.w3.org/2000/svg" width="1000px" height="600px" viewbox="0 -300 300 400">
-            <g id="mil">
-                <path d="m 250,-150 h -32 l 32,190.5 h -210 l 30,-190.5 h -31 l 105,-107 z" style="fill:#813400;stroke:#8e4d00;stroke-width:7.5;" />
-                <path d="m 250,-150 -25,49" style="stroke:#8e4d00;stroke-width:7.5;" />
-                <path d="m 41,-150 22,50" style="stroke:#8e4d00;stroke-width:7.5;" />
-                <path d="m 99.5,39.5 v -69 h 50 v 69 z" style="fill:none;stroke:#8e4d00;stroke-width:5;" />
-                <path d="m 163,-69.5 v -52 h -43 v 52 z" style="fill:#003ee3;stroke:#8e4d00;stroke-width:5;"/>
-                <rect ry="4.5" rx="10.5" y="10" x="111" height="4.5" width="5.5" style="fill:#a2a703;" />
-                <animateTransform attributeName="transform" type="rotate"  from="3600 300 300" to="0 145.5 -171" dur="4s" repeatCount="indefinite"/>
-                <g id="wings">
-                    <circle r="11.6" cy="-171" cx="145.5" style="fill:#8e4d00;stroke:#000000;" />
-                    <path d="m 157,-166 71,53 -21,24 -55,-72 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
-                    <path d="m 150,-182.5 53,-71 24,21 -72,54 z" style="fill:#b96500;stroke:#000000;stroke-width:0.65;" />
-                    <path d="m 135,-178 -72,-52 22,-25 55,73 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
-                    <path d="m 140,-160 -53,71 -24,-21 72,-55 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" /> 
-                    <animateTransform attributeName="transform" type="rotate" from="0 145.5 -171" to="3600 300 300" dur="4s" repeatCount="indefinite"/>
-                </g>
-            </g>
-        </svg>
+        <article class = "andrey-article">
+            <header>
+                <img class = "andrey-letovo" src = "../icon.png" alt = "Летово!"> 
+                <h1 class = "andrey-topic">
+                    Учебник по вычислительной геометрии
+                </h1>
+                <div class = "andrey-line"></div>
+            </header>
+            <main>
+                <svg class = "lolkeksvg" xmlns="http://www.w3.org/2000/svg" width="80vw" height="10vw" viewbox="300 0 900 190">
+                    <g id="car">
+                        <g id = "carbody">
+                            <path d="m 1000,0 m 100,100 h 80 l 50,-40 h 170 v 10 h -5 l 8,30 v 15 h 5 v 25 l -30,5 -3,5 -20,5 a 30,30 0 1,0 -60,0 h -115 a 30,30 0 1,0 -60,0 h -15 v -5 q -10,-25 -5,-50 z" style="fill:#12de22;stroke:#073c0d;stroke-width:2;" />
+                            <path d="m 1200,100 37.5,-30 h 30 v 30 z" style="stroke:#073c0d;stroke-width:2;fill:#2db2ed;"/>
+                            <path d="m 1275,100 v -30 h 40 v 23 a 7,7 0 0,1 -7,7 z" style="stroke:#073c0d;stroke-width:2;fill:#2db2ed;"/>
+                            <path d="m 1330,70 10,23 q 5,8 20,7 h 30 l -8,-30 z" style="stroke:#073c0d;stroke-width:2;fill:#2db2ed;"/>
+                        </g>
+                        <g id = "wheel1">
+                            <circle cx="1150" cy="155" r="26" fill="#000"/>
+                            <circle cx="1150" cy="155" r="15" fill="#fff"/>
+                            <circle cx="1150" cy="155" r="9" fill="#aaa"/>
+                            <path d="m 1150,155 v -15 30 z h 15 -30 z l 10.605,10.605 -21.21,-21.21 z l -10.605,10.605 21.21,-21.21" style="stroke:#aaa;stroke-width:3;"/>
+                        </g>
+                        <g id = "wheel2">
+                            <circle cx="1325" cy="155" r="26" fill="#000"/>
+                            <circle cx="1325" cy="155" r="15" fill="#fff"/>
+                            <circle cx="1325" cy="155" r="9" fill="#aaa"/>
+                             <path d="m 1325,155 v -15 30 z h 15 -30 z l 10.605,10.605 -21.21,-21.21 z l -10.605,10.605 21.21,-21.21" style="stroke:#aaa;stroke-width:3;"/>
+                        </g>
+                        <animateMotion dur="10s" begin="0" path="m 0,0 -1000,0 1000,0" id="car-anim" repeatCount="indefinite"/>
+                        <animateTransform attributeName="transform" type="rotate" values="0 1150 155; -3600 1150 155; 0 1150 155" dur="10s" begin="car-anim.begin + 0s" xlink:href="#wheel1" repeatCount="indefinite"/>
+                        <animateTransform attributeName="transform" type="rotate" values="0 1325 155; -3600 1325 155; 0 1325 155" dur="10s" begin="car-anim.begin + 0s" repeatCount="indefinite"  xlink:href="#wheel2"/>
+                    </g>
+                </svg>
+                <ul>
+                    <li class = "andrey-li"><a href="Islentyev_Mamontov/index.html">Алгоритм Джарвиса</a></li>
+                    <li class = "andrey-li"><a>Алгоритм Грэхема</a></li>
+                    
+                    <li class = "andrey-li"><a>Взаиморасположение двух окружностей</a></li>
+                    <li class = "andrey-li"><a></a></li>
+                    <li class = "andrey-li"><a></a></li>
+                    <li class = "andrey-li"><a></a></li>
+                    <li class = "andrey-li"><a></a></li>
+                    <li class = "andrey-li"><a></a></li>
+                    <li class = "andrey-li"><a></a></li>
+                </ul>
+            </main>
+        </article>
     </body>
 </html>
