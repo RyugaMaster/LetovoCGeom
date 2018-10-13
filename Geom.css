@@ -237,6 +237,12 @@
                         margin-left: calc(11vw - 6px);
                         margin-bottom: 50px;
                     }
+#aaa{
+    color:forestgreen;
+}
+#aaa:hover{
+    color:red;
+}
                     
 /*КОНЕЦ*/
 /*Паровозик))*/
