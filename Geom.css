@@ -232,3 +232,130 @@
                         width: 200px;
                         animation: anim 10s infinite;
                     }
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+            @import url('https://fonts.googleapis.com/css?family=Niramit');
+            .andrey-article {
+                border-width: 6px;
+                border-color: green;
+                border-style: inset;
+                width: 90vw;
+                background-color: hsla(111, 87%, 90%, 0.5);
+                margin: auto;
+                position: relative;
+                margin-bottom: 5vh;
+                margin-top: 100px;
+            }
+            .andrey-topic {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 7vh;
+                color: cadetblue;
+            }
+            .andrey-menu {
+                position: absolute;
+                border:5px green inset;
+                width: calc(100vw - 29px);
+                height: 70px;
+                background-color: hsla(111, 12%, 83%, 0.75);
+                top: -100px;
+                left: -39px;
+            }
+            .andrey-a {
+                display: inline-block;
+                margin-left: calc(33.3vw - 124px);
+                text-align: center;
+                font-family: 'Dancing Script', cursive;
+                font-weight: bold;
+                font-size: 40px;
+                text-decoration: none;
+                color: cadetblue
+            }
+            .andrey-breaker {
+                width: 4px;
+                height: 50px;
+                background-color: #005200;
+                position: absolute;
+                top: 10px;
+                left: calc(50vw - 16.5px);
+            }
+            .andrey-letovo {
+                display: block;
+                position: absolute;
+                border: 3px green outset; 
+                top:0;
+                right: 0;
+                width: 80px;
+                height: 90px;
+            }
+            .andrey-line {
+                display: block;
+                margin: 20px auto 30px auto;
+                width: 70vw;
+                background-color: hsla(240, 100%, 72%, 0.71);
+                height: 3px;
+            }
+            .andrey-brief {
+                width: 50vw;
+                margin-left: 20vw;
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-size: 2vh;
+            }
+            .andrey-imgcontainer {
+                position: relative;
+                margin-left: 5vw;
+                width: 80vw;
+                height: calc(40vw + 30px);
+                margin-bottom: 30px;
+            }
+            .andrey-imgdescriptor {
+                display: block;
+                font-family: 'Dancing Script', cursive;
+                width: 35vw;
+                height: 40vw;
+                font-size: 2.2vw;
+                position: absolute;
+                top: -20px;
+            }
+            .andrey-p {
+                display: block;
+                margin-left: 5vw;
+                margin-bottom: 50px;
+                font-family: 'Dancing Script', cursive;
+                font-size: 1.4rem;
+            }
+            .andrey-svg {
+                display: block;
+                width: 40vw;
+                height: 40vw;
+                border: 5px green inset;
+                position: absolute;
+                right: 0;
+                background-color: aliceblue;
+            }
+            .andrey-i {
+                font-family: 'Niramit', sans-serif;
+            }
+            .andrey-vid {
+                border-width: 6px;
+                border-color: green;
+                border-style: outset;
+                background-position: center;
+                width:80vw;
+                margin-top: 20px;
+                margin-left: 5vw;
+                margin-bottom: 50px;
+            }
+            .andrey-iframe {
+                width: 80vw;
+                height: 40vw;
+                margin-left: 5vw;
+            }
+ 	    .andrey-subtitle {
+                font-family: 'Dancing Script', cursive;
+                text-align: center;
+                font-weight: bolder;
+                font-size: 4vh;
+                color: cadetblue;
+            }
