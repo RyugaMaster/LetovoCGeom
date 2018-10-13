@@ -325,17 +325,6 @@
                 font-family: 'Dancing Script', cursive;
                 font-size: 1.4rem;
             }
-	    .andrey-p::first-letter{
-		font-family: 'Dancing Script', cursive;
-                font-size: 1.4rem;
-		font-weight: 100;
-		color: black;
-	    }
-	   .andrey-subtitle::first-letter{
-		font-weight: bolder;
-                font-size: 4vh;
-                color: cadetblue;
-	    }
             .andrey-svg {
                 display: block;
                 width: 40vw;
