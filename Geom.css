@@ -129,15 +129,16 @@
 /*Стиль для h2*/
                 h2 {
                     font-family: 'Dancing Script', cursive;
-                    font-size: 1vw;
-                    margin-bottom: 50px;
+                    font-size: 2vw;
                    color: cadetblue;
-                    margin-left: 4vw;
+                    margin: auto;
+                    font-weight: bolder;
+                    text-align: center;
                 }
 /*Изменение первой буквы h2*/
                 h2:first-letter {
                     font-weight: bolder;
-                    font-size: 2vw;
+                    font-size: 3vw;
                     color: forestgreen;
                 }
 /*Стиль для р*/
