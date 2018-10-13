@@ -80,6 +80,23 @@
                     color: red;
                     
                 }
+                .brd2 {
+                    border: 2px double black; /* Параметры границы */
+                    background: ; /* Цвет фона */
+                    padding: 10px; /* Поля вокруг текста */
+                    color: grey;
+                    display: inline-block;
+                    margin-left: 1vw; 
+                    font-family: 'Dancing Script', cursive;
+                    text-decoration: none;
+                   }
+/*Тот же самый HOVER, как и для предыдущей ссылки*/
+                .brd2:hover{
+                    transform: scale(1.1);
+                    border-style: inset;
+                    color: red;
+                    
+                }
 
  /*Стиль пунктов. Он нужен, если у вас в тексте есть пункты*/
  /*Оформление пунктов с точками (вместо цифр стоят точки)*/
