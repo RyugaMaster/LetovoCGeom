@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Здравствуй, Геометрия!</title>
+        <link rel="stylesheet" href="../Geom.css">
+    </head>
+    <body>
+        <article class = "andrey-article">
+            <header>
+                <div class = "andrey-menu">
+                    <a class = "andrey-a" href = "../html№1.html">Главная</a>
+                    <a class = "andrey-a" href = "problem.html">Задачи</a>
+                    <div class = "andrey-breaker"></div>
+                </div>
+                <img class = "andrey-letovo" src = "../icon.png" alt = "Летово!">
+                <h1 class = "andrey-topic">
+                    Алгоритм Джарвиса
+                </h1>
+                <div class = "andrey-line"></div>
+                <p class = "andrey-brief">
+                    Алгоритм Джарвиса определяет последовательность элементов множества, образующих выпуклую оболочку для этого множества. Метод можно представить как обтягивание верёвкой множества вбитых в доску гвоздей.
+                </p>
+                <div class = "andrey-line"></div>
+            </header>
+            <main>
+                 <p class = "andrey-p"><dfn>Выпуклой оболочкой множества точек</dfn> называется выпуклый многоугольник, построенный вершинами на этих точках, содержащий в себе все точки этого множества.</p>
+                <div class = "andrey-imgcontainer">
+                    <svg id = "s" class = "andrey-svg" version="1.1" viewBox="0 -300 300 400" fill="none" stroke="#000" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle r="2" cy="-101" cx="145" style="fill:#000;"></circle>
+                        <circle r="2" cy="-201" cx="35" style="fill:#000;"></circle>
+                        <circle r="2" cy="-231" cx="205" style="fill:#000;"></circle>
+                        <circle r="2" cy="-31" cx="65" style="fill:#000;"></circle>
+                        <circle r="2" cy="20" cx="270" style="fill:#000;"></circle>
+                        <circle r="2" cy="40" cx="175" style="fill:#000;"></circle>
+                        <circle r="2" cy="-161" cx="245" style="fill:#000;"></circle>
+                        <circle r="2" cy="-40" cx="235" style="fill:#000;"></circle>
+                        <path id = "p1" d="M 340,-290 L -40,-290 -40,90 150,90 340,90 340,-250 z" style="stroke:#000;stroke-width:3;fill:none">
+                            <animate attributeName="d" values="M 340,-290 L -40,-290 -40,90 150,90 340,90 340,-250 z; M 205,-231 L 35,-201 65,-31 175,40 270,20 245,-161 z" begin="s.click" dur="5s" fill = "freeze"/>
+                        </path>
+                    </svg>
+                    <p class = "andrey-imgdescriptor">
+                        Представьте себе доску, в которую вбито — но не по самую шляпку — много гвоздей. Возьмите верёвку, свяжите на ней скользящую петлю и набросьте её на доску, а потом затяните. Верёвка окружает все гвозди, но касается она только некоторых, самых внешних. Те гвозди, которых она касается, составляют <i lang = "ru">выпуклую оболочку</i> для всей группы гвоздей.
+                    </p>
+                </div>
+                <p class = "andrey-p">Допустим, у нас есть множество точек. Нам нужно построить <i>выпуклую оболочку</i>. Алгоритм Джарвиса позволяет нам найти из множества точек только те, которые входят в выпуклую оболочку.</p>
+                <p class = "andrey-p">Суть алгоритма Джарвиса заключается в нахождении следующей точки выпуклой оболочки за линейное время, если известна предыдущая точка <i class = "andrey-i">F(x’; y’)</i>. Чтобы найти следующую точку <i class = "andrey-i">A</i>, нужно найти точку с минимальным углом между прямой <i class = "andrey-i">y = y’</i> и лучом <i class = "andrey-i">FA</i>. Это можно сделать пробегом по всем точкам, сравнивая векторные произведения. Когда найденной точкой окажется самая первая - алгоритм останавливается. Выпуклая оболочка построена.</p>
+                <p class = "andrey-p">
+                Количество точек в выпуклой оболочке не превосходит <i class = "andrey-i">n</i>, изначальный размер множества. Так как для каждой точки мы запускаем цикл по всем оставшимся, то сложность алгоритма составит: <br> <br>
+                    <i class = "andrey-i">n + (n – 1) + (n – 2) + … + 1 = (n * (n + 1)) / 2 = 0.5n<sup>2</sup> + 0.5n ∈ O(n<sup>2</sup>)</i>
+                </p>
+                <iframe class = "andrey-iframe" src="https://www.youtube.com/embed/4E9udyKBbUU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <svg id = "svg" xmlns="http://www.w3.org/2000/svg" width="20vw" height="20vw" viewbox="0 -300 300 400">
+                    <g id="mil">
+                        <path d="m 250,-150 h -32 l 32,190.5 h -210 l 30,-190.5 h -31 l 105,-107 z" style="fill:#813400;stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 250,-150 -25,49" style="stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 41,-150 22,50" style="stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 99.5,39.5 v -69 h 50 v 69 z" style="fill:none;stroke:#8e4d00;stroke-width:5;" />
+                        <path d="m 163,-69.5 v -52 h -43 v 52 z" style="fill:#003ee3;stroke:#8e4d00;stroke-width:5;"/>
+                        <rect ry="4.5" rx="10.5" y="10" x="111" height="4.5" width="5.5" style="fill:#a2a703;" />
+                        <g id="wings">
+                            <circle r="11.6" cy="-171" cx="145.5" style="fill:#8e4d00;stroke:#000000;" />
+                            <path d="m 157,-166 71,53 -21,24 -55,-72 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
+                            <path d="m 150,-182.5 53,-71 24,21 -72,54 z" style="fill:#b96500;stroke:#000000;stroke-width:0.65;" />
+                            <path d="m 135,-178 -72,-52 22,-25 55,73 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
+                            <path d="m 140,-160 -53,71 -24,-21 72,-55 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" /> 
+                            <animateTransform attributeName="transform" type="rotate" from="0 145.5 -171" to="360 145.5 -171" dur="4s" repeatCount="indefinite"/>
+                        </g>
+                    </g>
+                </svg>
+            </main>
+            <footer>
+                
+            </footer>
+        </article>
+    </body>
+</html>
