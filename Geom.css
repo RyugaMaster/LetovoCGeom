@@ -279,6 +279,23 @@
                 top: -100px;
                 left: -39px;
             }
+	.lolkeksvg {
+                margin-left: 5vw;
+                margin-bottom: 40px;
+            }
+            .andrey-li{
+                font-weight: bolder;
+                font-size: 2rem;
+                color: black;
+                margin-bottom: 50px;
+                margin-left: 40px;
+            }
+            .andrey-li a{
+                font-size: 2rem;
+                font-weight: bold;
+                color: cadetblue;
+                text-decoration: none;
+            }
             .andrey-a {
                 display: inline-block;
                 margin-left: calc(33.3vw - 124px);
