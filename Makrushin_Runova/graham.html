@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Алгоритм Грехэма</title>
+		<meta charset="utf-8">
+        <link rel="shortcut icon" href="../icon.png" type="image/png">
+		<link rel="stylesheet" href="../Geom.css">
+</head>
+<body>
+<article>
+<h1>Алгоритм Грехэма (Graham scan)</h1>
+<p>Алгоритм Грэхэма используется для нахождения выпуклой оболочки данного 
+множества точек на плоскости. Напомним, что <strong>выпуклой оболочкой</strong> множества точек является наименьший
+ по количеству точек выпуклый многоугольник, вершины которого – точки данного множества
+ и все точки множества лежат внутри или на границе этого многоугольника.</p> 
+<h3>Как устроен алгоритм</h3>
+<ul>
+<li>  Шаг 1: </li>
+<p>Найдем какую-нибудь точку, которая гарантированно войдет в нашу оболочку.
+ Например, самую левую. Если таких точек несколько, возьмем самую нижнюю из них. 
+ Назовем выбранную точку стартовой (обозначим как Р).
+ Затем все точки по полярному углу относительно стартовой.</p>
+ <img id = "img1" src = "image1.png" width="30%">
+ <p> Сделаем это при помощи векторного произведения. Пусть нам нужно для двух точек А и В понять,
+ какая из них стоит раньше в порядке сортировки. Рассмотрим векторное произведение векторов РА и РВ.
+ Если оно положительное, то ориентированный угол между РА и РВ положительный, и А идет раньше В.
+ И наоборот, если произведение отрицательное, то В идет раньше А. </p>
+ <img src = "https://lh3.googleusercontent.com/XM0yH0h8OTDtYivmnefTfh5pVr9nmCsSMOhjrlC5WVDg_THnTe5_5slfHkHeyeLiGVsqbnilCPtgeCTMyh76AVWV1dU0UsOdCiyKK8Vx" width = "500" height = "300">
+ <img src = "https://lh6.googleusercontent.com/XE_sJCVkzoh4yGwVwIFtng5eYzVVKi7PBuCcWU43a-YTBWRe4lP5liUd8kyfMbFdAgUL6R_pRnlK1j-B9RzpPuRXVt4xwyuBC8La7prBaBx3KkV-O6F6UvnKw5O4BPP-6cRHJeHC9e1kLprF4g" width = "500" height = "300" class = "rightimg">
+ <p> Если же прямые РА и РВ совпадают, вначале идет та точка, расстояние от которой до Р меньше.
+ Таким образом, сортировка осуществляется при помощи компаратора:</p>
+ <p><font color = "#06A0F8">bool</font> <font color = "#F81C5F">cmp</font>(<font color = "#06A0F8">const</font> vec <font color = "#E8A126">&</font>a, <font color = "#06A0F8">const</font> vec <font color = "#E8A126">&</font>b)<br>
+ {<br>
+    <font color = "#06A0F8">if</font> (<font color = "#F81C5F">cross_prod</font>(a, b) <font color = "#E8A126">==</font> 0) <font color = "#06A0F8">return</font> (a.x <font color = "#E8A126">*</font> a.x <font color = "#E8A126">+</font> a.y <font color = "#E8A126">*</font> a.y <font color = "#E8A126"><</font> b.x <font color = "#E8A126">*</font> b.x <font color = "#E8A126">+</font> b.y <font color = "#E8A126">*</font> b.y);<br>
+    <font color = "#06A0F8">return</font> (<font color = "#F81C5F">cross_prod</font>(a, b) <font color = "#E8A126"><</font> 0);<br>
+ }<br></p>
+ <p>Особенность и удобство данной сортировки в том, что точки выпуклой оболочки
+ в сортировке идут в порядке обхода против часовой стрелки (начиная со стартовой). Это позволит нам,
+ идя по отсортированному массиву точек, искать точки, входящие в выпуклую оболочку, последовательно.</p>
+<li> Шаг 2: </li>
+<p>Будем идти по нашему массиву (теперь он уже отсортирован). На каждом шаге будем
+ хранить текущую выпуклую оболочку, то есть актуальную выпуклую оболочку для всех 
+ пройденных до этого точек. Изначально в стеке хранятся две точки –первые две в порядке
+ сортировки (стартовая и еще одна). Начинаем обход с третьей точки.</p>
+<p>Пусть на данный момент мы просмотрели уже Х – 1 точку, построили для них оболочку и хотим добавить Х-ю.
+ Назовем Х-ю точку текущей. Заметим, что из порядка нашей сортировки следует, что текущая точка точно войдет
+ в текущую оболочку для Х точек. Однако в этом случае некоторое количество предыдущих точек придется убрать,
+ так как они нарушают выпуклость оболочки. </p>
+<img src = "https://lh4.googleusercontent.com/8TxFSW1o5H_nt8_Z8sLX9l3NSkJ0bHKEUIDYfDW6RMRtwA4j6h6uPePxgQlQ78sKSSeWyzRvQHR515OQLeOygQNxnbIS4AaNHDVM0OXA7OBblq4We6K1OSzw2I-qnA_b5aoC9lNXXZRfgkeASw" width = "300" height = "300" class = "leftimg"> 
+<p>Сформулируем операцию удаления. Поймем, входит ли теперь в выпуклую оболочку предыдущая точка. Пусть текущая точка – А,
+ последняя точка стека (для которой мы хотим понять, удалять ее или нет) – В, предпоследняя точка стека – С. </p>
+<p><strong>Важно</strong>: изначально предпоследняя точка всегда найдется, так как хотя бы две точки в
+ оболочке для Х – 1 точки точно присутствовало. Если же после нескольких операций удаления
+ в стеке осталось меньше двух точек, продолжать операции удаления не следует. Оставшаяся точка
+ в стеке точно войдет в выпуклую оболочку, потому что в оболочке не может быть меньше двух точек.</p>
+<p> Рассмотрим векторное произведение векторов ВА и СВ. Если оно отрицательное, то ориентированный
+ угол между ВА и СВ отрицательный, а значит, угол АВС больше 180 градусов (см. рис. н) </p>
+<img src = "https://lh4.googleusercontent.com/W7Mb7VHcPEBbzIuXEbMGpQAbRmDuE6PrNcabMm5N-DUdhb44tCo0eOobpCTqEKtrDqNUhFf21GoJsb7UqNR2e1OJLqRjiCnysn1sF2RE" width = "300" height = "300" class = "rightimg">
+<p>А это значит, что точка В нарушает выпуклость, и ее нужно удалить. Теперь точкой В стала точка С,
+ а точкой С – точка, находящаяся в стеке перед С. </p>
+<p>Будем продолжать совершать данные операции удаления, пока не встретим первую точку,
+ которую не надо удалять (или пока в стеке не останется одна точка). Тогда добавим в стек текущую точку.
+ Теперь в нем хранится корректная выпуклая оболочка для Х точек. Можно переходить к следующей точке.</p>
+<p>      <font color = "#06A0F8">while</font> (stack.<font color = "#F81C5F">size</font>() <font color = "#E8A126">></font> 1 <font color = "#E8A126">&&</font> <font color = "#F81C5F">cross_prod</font>(p <font color = "#E8A126">-</font> stack[stack.<font color = "#F81C5F">size</font>() <font color = "#E8A126">-</font> 1],<br>
+      stack[stack.<font color = "#F81C5F">size</font>() <font color = "#E8A126">-</font> 1] <font color = "#E8A126">-</font> stack[stack.<font color = "#F81C5F">size</font>() <font color = "#E8A126">-</font> 2]) <font color = "#E8A126"><=</font> 0) {<br>
+          stack.<font color = "#F81C5F">pop_back</font>();<br>
+      }<br>
+      ans.<font color = "#F81C5F">pb</font>(p);<br></p>
+<p><i>(cross product – векторное произведение)</i></p>
+<p>Так как на каждом шаге алгоритма мы получаем корректную выпуклую оболочку для текущего набора точек,
+ то, когда мы обойдем все точки, мы получим корректную выпуклую оболочку для всех данных точек. Значит, алгоритм работает.</p>
+<h3>Сложность</h3>
+<p>Поймем, за сколько операций работает данный алгоритм. Сортировка работает за O(n log n).
+ Основной алгоритм работает за O(n), так как каждую из вершин мы ровно один раз добавляем в 
+ стек и не более одного раза удаляем. Операции добавления и удаления из стека, а также 
+ проверка на то, нужно ли удалять точку, работают за O(1). </p>
+ <h3>Задачи</h3>
+ <p><a href = "https://www.e-olymp.com/ru/problems/5478">ЗАДАЧА1</a></p>
+ <p><a href = "https://www.e-olymp.com/ru/problems/3042">ЗАДАЧА2</a></p>
+  <svg id = "svg" xmlns="http://www.w3.org/2000/svg" width="20vw" height="20vw" viewbox="0 -300 300 400">
+                    <g id="mil">
+                        <path d="m 250,-150 h -32 l 32,190.5 h -210 l 30,-190.5 h -31 l 105,-107 z" style="fill:#813400;stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 250,-150 -25,49" style="stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 41,-150 22,50" style="stroke:#8e4d00;stroke-width:7.5;" />
+                        <path d="m 99.5,39.5 v -69 h 50 v 69 z" style="fill:none;stroke:#8e4d00;stroke-width:5;" />
+                        <path d="m 163,-69.5 v -52 h -43 v 52 z" style="fill:#003ee3;stroke:#8e4d00;stroke-width:5;"/>
+                        <rect ry="4.5" rx="10.5" y="10" x="111" height="4.5" width="5.5" style="fill:#a2a703;" />
+                        <g id="wings">
+                            <circle r="11.6" cy="-171" cx="145.5" style="fill:#8e4d00;stroke:#000000;" />
+                            <path d="m 157,-166 71,53 -21,24 -55,-72 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
+                            <path d="m 150,-182.5 53,-71 24,21 -72,54 z" style="fill:#b96500;stroke:#000000;stroke-width:0.65;" />
+                            <path d="m 135,-178 -72,-52 22,-25 55,73 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" />
+                            <path d="m 140,-160 -53,71 -24,-21 72,-55 z" style="fill:#b96500;stroke:#000;stroke-width:0.65;" /> 
+                            <animateTransform attributeName="transform" type="rotate" from="0 145.5 -171" to="360 145.5 -171" dur="4s" repeatCount="indefinite"/>
+                        </g>
+                    </g>
+                </svg>
+ </article>
+ </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
