@@ -191,16 +191,6 @@
                     margin-top: auto;
                     margin-bottom: auto;
                 }
-                #imgser1 {
-                    border-width: 6px; /*Нельзя*/
-                    border-color: green;/*Нельзя*/
-                    border-style: outset;/*Нельзя*/
-                    margin: auto;
-                    float: left;
-                    display: block;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                }
 /*Это можно не смотреть.*/
                 #img2 {
                     float: right;
