@@ -226,6 +226,17 @@
 					    left: 60vw;
 					    margin-right: calc(4vw - 6px);
 					}
+                    #iframes {
+                            border-width: 6px;
+                        border-color: green;
+                        border-style: outset;
+                        background-position: center;
+                        /*height: 38.6vw;*/
+                        margin-top: 100px;
+                        margin-left: calc(10vw - 6px);
+                        margin-bottom: 50px;
+                    }
+                    
 /*КОНЕЦ*/
 /*Паровозик))*/
                 #train {
