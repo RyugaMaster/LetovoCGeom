@@ -24,8 +24,10 @@
  какая из них стоит раньше в порядке сортировки. Рассмотрим векторное произведение векторов РА и РВ.
  Если оно положительное, то ориентированный угол между РА и РВ положительный, и А идет раньше В.
  И наоборот, если произведение отрицательное, то В идет раньше А. </p>
- <img src = "https://lh3.googleusercontent.com/XM0yH0h8OTDtYivmnefTfh5pVr9nmCsSMOhjrlC5WVDg_THnTe5_5slfHkHeyeLiGVsqbnilCPtgeCTMyh76AVWV1dU0UsOdCiyKK8Vx" width = "500" height = "300">
- <img src = "https://lh6.googleusercontent.com/XE_sJCVkzoh4yGwVwIFtng5eYzVVKi7PBuCcWU43a-YTBWRe4lP5liUd8kyfMbFdAgUL6R_pRnlK1j-B9RzpPuRXVt4xwyuBC8La7prBaBx3KkV-O6F6UvnKw5O4BPP-6cRHJeHC9e1kLprF4g" width = "500" height = "300" class = "rightimg">
+ <img id = "img1" src = "image2.png" width="30%">
+ <p> В данном случае В идет до А</p>
+ <img id = "img1" src = "image3.png" width="30%">
+ <p>А здесь иначе, А предшествует В</p>
  <p> Если же прямые РА и РВ совпадают, вначале идет та точка, расстояние от которой до Р меньше.
  Таким образом, сортировка осуществляется при помощи компаратора:</p>
  <p><font color = "#06A0F8">bool</font> <font color = "#F81C5F">cmp</font>(<font color = "#06A0F8">const</font> vec <font color = "#E8A126">&</font>a, <font color = "#06A0F8">const</font> vec <font color = "#E8A126">&</font>b)<br>
@@ -45,7 +47,7 @@
  Назовем Х-ю точку текущей. Заметим, что из порядка нашей сортировки следует, что текущая точка точно войдет
  в текущую оболочку для Х точек. Однако в этом случае некоторое количество предыдущих точек придется убрать,
  так как они нарушают выпуклость оболочки. </p>
-<img src = "https://lh4.googleusercontent.com/8TxFSW1o5H_nt8_Z8sLX9l3NSkJ0bHKEUIDYfDW6RMRtwA4j6h6uPePxgQlQ78sKSSeWyzRvQHR515OQLeOygQNxnbIS4AaNHDVM0OXA7OBblq4We6K1OSzw2I-qnA_b5aoC9lNXXZRfgkeASw" width = "300" height = "300" class = "leftimg"> 
+<img id = "img1" src = "image4.png" width="30%">
 <p>Сформулируем операцию удаления. Поймем, входит ли теперь в выпуклую оболочку предыдущая точка. Пусть текущая точка – А,
  последняя точка стека (для которой мы хотим понять, удалять ее или нет) – В, предпоследняя точка стека – С. </p>
 <p><strong>Важно</strong>: изначально предпоследняя точка всегда найдется, так как хотя бы две точки в
@@ -53,8 +55,8 @@
  в стеке осталось меньше двух точек, продолжать операции удаления не следует. Оставшаяся точка
  в стеке точно войдет в выпуклую оболочку, потому что в оболочке не может быть меньше двух точек.</p>
 <p> Рассмотрим векторное произведение векторов ВА и СВ. Если оно отрицательное, то ориентированный
- угол между ВА и СВ отрицательный, а значит, угол АВС больше 180 градусов (см. рис. н) </p>
-<img src = "https://lh4.googleusercontent.com/W7Mb7VHcPEBbzIuXEbMGpQAbRmDuE6PrNcabMm5N-DUdhb44tCo0eOobpCTqEKtrDqNUhFf21GoJsb7UqNR2e1OJLqRjiCnysn1sF2RE" width = "300" height = "300" class = "rightimg">
+ угол между ВА и СВ отрицательный, а значит, угол АВС больше 180 градусов</p>
+<img id = "img1" src = "image5.png" width="30%">
 <p>А это значит, что точка В нарушает выпуклость, и ее нужно удалить. Теперь точкой В стала точка С,
  а точкой С – точка, находящаяся в стеке перед С. </p>
 <p>Будем продолжать совершать данные операции удаления, пока не встретим первую точку,
@@ -73,6 +75,8 @@
  Основной алгоритм работает за O(n), так как каждую из вершин мы ровно один раз добавляем в 
  стек и не более одного раза удаляем. Операции добавления и удаления из стека, а также 
  проверка на то, нужно ли удалять точку, работают за O(1). </p>
+ <h3>Ниже вы можете ознакомиться с видео по данной теме</h3>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/iDq-rYSkOh0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
  <h3>Задачи</h3>
  <p><a href = "https://www.e-olymp.com/ru/problems/5478">ЗАДАЧА1</a></p>
  <p><a href = "https://www.e-olymp.com/ru/problems/3042">ЗАДАЧА2</a></p>
